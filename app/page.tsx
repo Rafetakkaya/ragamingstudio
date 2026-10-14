@@ -30,14 +30,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-indigo-500/30">
-      {/* Background Glow */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/20 blur-[120px] rounded-full mix-blend-screen" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen" />
       </div>
 
       <div className="relative z-10">
-        {/* Navigation */}
         <nav className="container mx-auto px-6 py-8 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Gamepad2 className="w-8 h-8 text-indigo-400" />
@@ -56,9 +54,7 @@ export default function Home() {
           </div>
         </nav>
 
-        {/* Hero Section */}
         <section className="container mx-auto px-6 pt-20 pb-32 text-center md:text-left md:flex items-center gap-12">
-          {/* Sol Taraf: Yazılar */}
           <div className="flex-1 space-y-6 z-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 text-xs font-medium text-indigo-300 mb-4">
               <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
@@ -81,23 +77,23 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Sağ Taraf: Şık Grafik (Mobilde gizli, masaüstünde görünür) */}
+          
           <div className="hidden md:flex flex-1 justify-center relative z-10 mt-12 md:mt-0">
-            {/* Arka plan parlaması */}
+     
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/30 blur-[80px] rounded-full pointer-events-none" />
 
-            {/* Süzülen Kart */}
+
             <div className="relative w-full max-w-md aspect-square rounded-[40px] bg-linear-to-br from-indigo-950/40 to-slate-900/80 border border-slate-700/50 backdrop-blur-xl shadow-2xl flex items-center justify-center p-12 overflow-hidden animate-[bounce_5s_infinite_alternate]">
-              {/* CULL Oyun İkonu (public klasöründen) */}
+
+
               <Image
-                width={100}
-                height={100}
                 src="/ragamingstudio/knight_icon_512x512.png"
-                alt="CULL Game Icon"
-                className="w-full h-full object-contain rounded-3xl shadow-[0_0_50px_rgba(129,140,248,0.3)] z-10 relative"
+                alt="Knight Icon"
+                width={512}
+                height={512}
+                priority 
               />
 
-              {/* Alt Köşe Rozet */}
               <div className="absolute bottom-6 right-6 bg-slate-950/80 px-4 py-2 rounded-xl border border-slate-700/50 backdrop-blur-md z-10 shadow-lg">
                 <span className="text-sm font-bold text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
@@ -175,7 +171,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Support Section */}
         <section id="support" className="container mx-auto px-6 py-24">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 space-y-4">
@@ -226,7 +221,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Support Form */}
               <div className="md:col-span-3 bg-slate-900/50 p-8 rounded-3xl border border-slate-800">
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -320,7 +314,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Footer */}
         <footer className="border-t border-slate-800/50 mt-12">
           <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
