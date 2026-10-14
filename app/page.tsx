@@ -56,8 +56,7 @@ export default function Home() {
           </div>
         </nav>
 
-  
-    {/* Hero Section */}
+        {/* Hero Section */}
         <section className="container mx-auto px-6 pt-20 pb-32 text-center md:text-left md:flex items-center gap-12">
           {/* Sol Taraf: Yazılar */}
           <div className="flex-1 space-y-6 z-10">
@@ -86,18 +85,18 @@ export default function Home() {
           <div className="hidden md:flex flex-1 justify-center relative z-10 mt-12 md:mt-0">
             {/* Arka plan parlaması */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/30 blur-[80px] rounded-full pointer-events-none" />
-            
+
             {/* Süzülen Kart */}
             <div className="relative w-full max-w-md aspect-square rounded-[40px] bg-linear-to-br from-indigo-950/40 to-slate-900/80 border border-slate-700/50 backdrop-blur-xl shadow-2xl flex items-center justify-center p-12 overflow-hidden animate-[bounce_5s_infinite_alternate]">
               {/* CULL Oyun İkonu (public klasöründen) */}
-              <Image 
-              width={100}
-              height={100}
-                src="/knight_icon_512x512.png" 
-                alt="CULL Game Icon" 
+              <Image
+                width={100}
+                height={100}
+                src="/ragamingstudio/knight_icon_512x512.png"
+                alt="CULL Game Icon"
                 className="w-full h-full object-contain rounded-3xl shadow-[0_0_50px_rgba(129,140,248,0.3)] z-10 relative"
               />
-              
+
               {/* Alt Köşe Rozet */}
               <div className="absolute bottom-6 right-6 bg-slate-950/80 px-4 py-2 rounded-xl border border-slate-700/50 backdrop-blur-md z-10 shadow-lg">
                 <span className="text-sm font-bold text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400 flex items-center gap-2">
